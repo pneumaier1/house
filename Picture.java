@@ -35,13 +35,12 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
+            wall.makeVisible();
             wall.moveHorizontal(-140);
             wall.moveVertical(20);
             wall.changeSize(120);
-            wall.changeColor("blue");
-            wall.makeVisible();
-            
-            window.changeColor("black");
+         
+            window.changeColor("blue");
             window.moveHorizontal(-120);
             window.moveVertical(40);
             window.changeSize(40);
@@ -52,7 +51,7 @@ public class Picture
             roof.moveVertical(-60);
             roof.makeVisible();
     
-            sun.changeColor("yellow");
+            sun.changeColor("blue");
             sun.moveHorizontal(100);
             sun.moveVertical(-40);
             sun.changeSize(80);
@@ -79,7 +78,7 @@ public class Picture
     {
         wall.changeColor("red");
         window.changeColor("black");
-        roof.changeColor("green");
+        roof.changeColor("blue");
         sun.changeColor("yellow");
     }
 }
